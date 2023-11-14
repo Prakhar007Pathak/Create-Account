@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(backGG.jpg);
+    background-repeat: no-repeat;
+    background-size: 1349px;
+
+}
+
+.subMain {
+    width: 300px;
+    height: 80vh;
+    /* border: 2px solid rgba(0, 0, 0, 0.185); */
+    background: transparent;
+    border: 2px solid rgba(128, 0, 128, 0.767);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.subMain:hover {
+    width: 302px;
+    height: 81vh;
+
+}
+
+.headCreatAcc {
+    width: auto;
+    height: auto;
+    padding: 35px 0 0 15px;
+}
+
+.headCreatAcc h1:first-child {
+    color: #000;
+}
+
+.headCreatAcc h1:last-child {
+    color: #000;
+}
+
+.formZotherContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 23%;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formElement {
+    box-sizing: border-box;
+    outline: none;
+    height: 28px;
+    width: 260px;
+    margin: 10px 0;
+    border: 1.5px solid rgba(0, 0, 0, 0.384);
+    border: 1.5px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.iconName {
+    position: absolute;
+    top: 19px;
+    right: 30px;
+}
+
+.spaceForName label {
+    position: absolute;
+    top: 19px;
+    left: 25px;
+}
+
+#name {
+    font-size: 14px;
+    padding: 0 0 0 5px;
+    display: inline;
+    vertical-align: bottom;
+    background: transparent;
+    font-weight: 600;
+}
+
+#name:focus~label,
+#name:valid~label {
+    top: -2px;
+    font-size: 13px;
+    color: rgb(128, 0, 128);
+}
+.iconEmail {
+    position: absolute;
+    top: 67px;
+    right: 30px;
+}
+
+.spaceForEmail label {
+    position: absolute;
+    top: 67px;
+    left: 25px;
+}
+
+#email {
+    font-size: 14px;
+    padding: 0 0 0 5px;
+    display: inline;
+    vertical-align: bottom;
+    background: transparent;
+    font-weight: 600;
+}
+#email:focus~label,
+#email:valid~label {
+    top: 46px;
+    font-size: 13px;
+    color: rgb(128, 0, 128);
+}
+
+.iconPassword {
+    position: absolute;
+    top: 115px;
+    right: 30px;
+}
+
+.spaceForPassword label {
+    position: absolute;
+    top: 115px;
+    left: 25px;
+}
+
+#password {
+    font-size: 14px;
+    padding: 0 0 0 5px;
+    display: inline;
+    vertical-align: bottom;
+    background: transparent;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+#password:focus~label,
+#password:valid~label {
+    top: 94px;
+    font-size: 13px;
+    color: rgb(128, 0, 128);
+}
+
+
+#submit {
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid rgba(128, 0, 128, 0.767);
+    border-radius: 4px;
+    height: 28px;
+    width: 260px;
+    margin: 10px 0;
+    background-color: rgba(92, 0, 128, 0.425);
+    color: rgba(0, 0, 0, 0.774);
+    letter-spacing: 1px;
+}
+
+#submit:hover {
+    border: 2px solid rgba(0, 0, 0, 0.384);
+    color: #000;
+}
+
+.lineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineFirst {
+    margin: 3px 2px 0 0;
+    width: 118px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.lineSecond {
+    margin: 3px 0 0 2px;
+    width: 118px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.loginButton {
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid rgba(128, 0, 128, 0.767);
+    border-radius: 4px;
+    height: 28px;
+    width: 260px;
+    margin: 10px 0;
+    /* background-color: rgb(229, 255, 0); */
+    background-color: rgba(92, 0, 128, 0.425);
+    color: rgba(0, 0, 0, 0.774);
+    letter-spacing: 1px;
+}
+
+.loginButton:hover {
+    border: 2px solid rgba(0, 0, 0, 0.384);
+    color: #000;
+}

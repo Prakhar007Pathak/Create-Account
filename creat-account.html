@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="creat-account.css">
+    <title>Creat Account</title>
+</head>
+
+<body>
+    <main>
+        <div class="subMain">
+            <div class="headCreatAcc">
+                <h1>Creat</h1>
+                <h1>Account</h1>
+            </div>
+            <div class="formZotherContainer">
+                <form action="#" class="form">
+                    <div class="spaceForName">
+                        <span class="iconName"><iconify-icon icon="wpf:name"></iconify-icon></span>
+                        <input type="text" name="name" class="formElement" id="name" 
+                        onkeydown="handleKeyPress(event, 'email')" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="spaceForEmail">
+                        <span class="iconEmail"><iconify-icon icon="ic:baseline-email"></iconify-icon></span>
+                        <input type="email" name="email" class="formElement" id="email"
+                        onkeydown="handleKeyPress(event, 'password')" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="spaceForPassword">
+                        <span class="iconPassword"><iconify-icon icon="mdi:password"></iconify-icon></span>
+                        <input type="password" name="password" class="formElement" id="password"
+                        onkeydown="handleKeyPress(event, 'submit')" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <button type="submit" class="submit" id="submit" onclick="submitForm()"><b>Sign up</b></button>
+                </form>
+                <div class="lineContainer">
+                    <div class="lineFirst"></div>
+                    <p>or</p>
+                    <div class="lineSecond"></div>
+                </div>
+                <div class="login">
+                    <a href="#">
+                        <button type="button" class="loginButton"><b>login</b></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function handleKeyPress(event, nextInputId) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.getElementById(nextInputId).focus();
+            }
+        }
+
+        function submitForm() {
+            // Add your form submission logic here
+            // For demonstration, let's just log the form data
+            var formData = {
+                Name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value
+            };
+
+            console.log(formData);
+
+            // You can add AJAX or other logic for form submission
+        }
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
